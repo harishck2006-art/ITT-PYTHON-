@@ -1,0 +1,23 @@
+[24bcs170@mepcolinux ex6]$cat combo2.py
+from itertools import combinations
+li = ['A','B','C','D']
+print(list(combinations(li,2)))
+
+[24bcs170@mepcolinux ex6]$cat combo2rep.py
+from itertools import combinations_with_replacement
+l = [1,2]
+print(list(combinations_with_replacement(l,2)))
+
+[24bcs170@mepcolinux ex6]$cat countuse.py
+from itertools import count
+
+counter = count(10)
+for _ in range(5):
+    print(next(counter), end=" ")
+[24bcs170@mepcolinux ex6]$cat cycle3.py
+from itertools import cycle
+
+data = [5, 10, 15]
+cycler = cycle(data)
+for _ in range(len(data) * 3):
+    print(next(cycler), end=" ")

@@ -1,0 +1,35 @@
+[24bcs170@mepcolinux ex7]$cat car.py
+class Car:
+    def drive(self):
+        print("Vroom!")
+
+car1 = Car()
+car2 = Car()
+
+car1.drive()
+car2.drive()
+
+[24bcs170@mepcolinux ex7]$cat fan.py
+class Fan:
+    def __init__(self):
+        self.speed = "Medium"
+
+    def status(self):
+        print("Fan speed:", self.speed)
+
+fan = Fan()
+fan.status()
+
+
+[24bcs170@mepcolinux ex7]$cat rectangle.py
+class Rectangle:
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+
+    def area(self):
+        return self.length * self.width
+
+rect = Rectangle(5, 3)
+
+print(f"Area: {rect.area()}")

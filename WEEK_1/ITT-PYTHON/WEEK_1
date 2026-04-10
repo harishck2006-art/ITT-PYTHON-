@@ -1,0 +1,26 @@
+[24bcs170@mepcolinux itt]$cat attendance.py
+Jan30 = {"Harish", "Varshiv", "Naveen", "Akash"}
+Jan31 = {"Akash", "Naveen"}
+
+print("Present on Both Days : ",Jan30 & Jan31)
+print("Present on Either Days : ", Jan30 | Jan31)
+print("Absent on Second Day : ", Jan30 - Jan31)
+[24bcs170@mepcolinux itt]$cat c.py
+# 1. Define the sets
+harish = {"C", "C++", "Python", "Java"}
+varshiv = {"C++", "C", "Flutter", "MongoDB"}
+
+# 2. Find Common Interests (Intersection)
+print("Common Interests         : ", end="")
+common = harish & varshiv
+print(", ".join(common))
+
+# 3. Harish's Unique Skills (Difference: Harish minus Varshiv)
+print("Harish's Suggestions     : ", end="")
+harish_unique = harish - varshiv
+print(", ".join(harish_unique))
+
+# 4. Varshiv's Unique Skills (Difference: Varshiv minus Harish)
+print("Varshiv's Suggestions    : ", end="")
+varshiv_unique = varshiv - harish
+print(", ".join(varshiv_unique))
